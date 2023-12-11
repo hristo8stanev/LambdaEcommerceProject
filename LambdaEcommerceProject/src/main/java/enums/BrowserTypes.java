@@ -11,9 +11,11 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 public enum BrowserTypes {
     CHROME,
     FIREFOX,
+    EDGE,
     CHROME_HEADLESS,
     FIREFOX_HEADLESS,
-    EDGE;
+    EDGE_HEADLESS;
+
 
     public static WebDriver setupBrowser(BrowserTypes browserType) {
         switch (browserType) {
@@ -27,10 +29,13 @@ public enum BrowserTypes {
                 return new ChromeDriver(optionChrome);
             case FIREFOX_HEADLESS:
                 FirefoxOptions optionFirefox = new FirefoxOptions();
-                optionFirefox.addArguments("--headless");
+                optionFirefox.addArguments("--headless=new");
                 return new FirefoxDriver(optionFirefox);
             case EDGE:
                 return new EdgeDriver();
+            case EDGE_HEADLESS:
+                EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.addArguments("--headless=new");
         }
         return null;
     }
