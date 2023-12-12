@@ -26,5 +26,4 @@ public class Map extends BaseMap {
     public WebElement logoutButton() {
         return waitAndFindElement(By.xpath("(//a[contains(@href, 'logout')])[2]"));
     }
-
 }

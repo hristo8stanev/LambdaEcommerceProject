@@ -3,7 +3,7 @@ package pages.searchpage;
 import org.openqa.selenium.WebDriver;
 import pages.BasePage;
 
-import static core.Utils.getMappingByKey;
+import static base.Utils.getMappingByKey;
 
 public class SearchPage extends BasePage {
 

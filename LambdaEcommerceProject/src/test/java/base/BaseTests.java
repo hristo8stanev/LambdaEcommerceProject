@@ -1,4 +1,4 @@
-package core;
+package base;
 
 import enums.BrowserTypes;
 import org.junit.jupiter.api.AfterEach;
@@ -11,7 +11,7 @@ import pages.registerpage.RegisterPage;
 import pages.searchpage.SearchPage;
 import pages.shoppingcartpage.ShoppingCartPage;
 
-import static core.Utils.getMappingByKey;
+import static base.Utils.getMappingByKey;
 
 public class BaseTests {
 

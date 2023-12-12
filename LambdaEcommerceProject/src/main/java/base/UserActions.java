@@ -1,4 +1,4 @@
-package core;
+package base;
 
 import com.github.javafaker.Faker;
 import org.apache.commons.lang3.RandomStringUtils;

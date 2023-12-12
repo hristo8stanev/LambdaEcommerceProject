@@ -1,7 +1,7 @@
 package ecommercetests;
 
-import core.BaseTests;
-import core.UserActions;
+import base.BaseTests;
+import base.UserActions;
 import org.junit.jupiter.api.Test;
 
 public class LoginTests extends BaseTests {
