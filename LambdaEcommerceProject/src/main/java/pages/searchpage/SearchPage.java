@@ -8,11 +8,11 @@ import static core.Utils.getMappingByKey;
 public class SearchPage extends BasePage {
 
     public SearchPage(WebDriver driver) {
-        super(driver, getMappingByKey("homePage"));
+        super(driver, getMappingByKey("searchPage"));
     }
 
     @Override
     protected String Url() {
-        return null;
+        return getMappingByKey("searchPage");
     }
 }

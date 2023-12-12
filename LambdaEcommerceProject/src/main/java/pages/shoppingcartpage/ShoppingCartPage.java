@@ -12,7 +12,7 @@ public class ShoppingCartPage extends BasePage {
 
     @Override
     protected String Url() {
-        return null;
+        return getMappingByKey("shoppingCartPage");
     }
 
     //ACTIONS

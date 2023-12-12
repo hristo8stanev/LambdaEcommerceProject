@@ -2,5 +2,5 @@ package ecommercetests;
 
 import core.BaseTests;
 
-public class SearchPage extends BaseTests {
+public class CheckoutTests extends BaseTests {
 }

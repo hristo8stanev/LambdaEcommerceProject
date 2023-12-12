@@ -1,5 +1,6 @@
 package pages;
 
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -16,8 +17,15 @@ public abstract class BasePage {
         this.url = url;
         wait = new WebDriverWait(driver, Duration.ofSeconds(TIME_FOR_SECOND_TIMEOUT));
     }
+
     protected abstract String Url();
+
     public void navigate() {
         this.driver.get(url);
+    }
+
+    public void assertUrlPage(String expectedUrl) {
+        String actualUrl = driver.getCurrentUrl();
+        Assertions.assertEquals(expectedUrl, actualUrl, "Expected page was not navigated.");
     }
 }

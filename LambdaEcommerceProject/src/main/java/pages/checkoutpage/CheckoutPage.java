@@ -1,4 +1,17 @@
 package pages.checkoutpage;
 
-public class CheckoutPage {
+import org.openqa.selenium.WebDriver;
+import pages.BasePage;
+
+import static core.Utils.getMappingByKey;
+
+public class CheckoutPage extends BasePage {
+    public CheckoutPage(WebDriver driver ) {
+        super(driver, getMappingByKey("checkoutPage"));
+    }
+
+    @Override
+    protected String Url() {
+        return getMappingByKey("checkoutPage");
+    }
 }

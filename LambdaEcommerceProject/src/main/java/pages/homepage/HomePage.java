@@ -12,6 +12,6 @@ public class HomePage extends BasePage {
 
     @Override
     protected String Url() {
-        return null;
+        return getMappingByKey("homePage");
     }
 }
