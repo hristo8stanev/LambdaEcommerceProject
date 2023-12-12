@@ -3,7 +3,7 @@ package pages.checkoutpage;
 import org.openqa.selenium.WebDriver;
 import pages.BasePage;
 
-import static base.Utils.getMappingByKey;
+import static core.Utils.getMappingByKey;
 
 public class CheckoutPage extends BasePage {
     public CheckoutPage(WebDriver driver ) {

@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import pages.BaseMap;
 import pages.BasePage;
 
-import static base.Utils.getMappingByKey;
+import static core.Utils.getMappingByKey;
 
 public class LoginPage extends BasePage {
     private final Map loginPageMap;

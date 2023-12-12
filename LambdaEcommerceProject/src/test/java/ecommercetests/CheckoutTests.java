@@ -1,6 +1,6 @@
 package ecommercetests;
 
-import base.BaseTests;
+import core.BaseTests;
 
 public class CheckoutTests extends BaseTests {
 }

@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import pages.BaseMap;
 import pages.BasePage;
 
-import static base.Utils.getMappingByKey;
+import static core.Utils.getMappingByKey;
 
 public class HomePage extends BasePage {
     private final Map homePageMap;
@@ -45,5 +45,6 @@ public class HomePage extends BasePage {
 
     public void compareItem() {
 
+        //IN PROGRESS
     }
 }

@@ -1,7 +1,7 @@
 package ecommercetests;
 
-import base.BaseTests;
-import base.UserActions;
+import core.BaseTests;
+import core.UserActions;
 import org.junit.jupiter.api.Test;
 
 

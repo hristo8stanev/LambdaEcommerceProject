@@ -1,6 +1,6 @@
 package ecommercetests;
 
-import base.BaseTests;
+import core.BaseTests;
 import org.junit.jupiter.api.Test;
 
 public class SearchTests extends BaseTests {

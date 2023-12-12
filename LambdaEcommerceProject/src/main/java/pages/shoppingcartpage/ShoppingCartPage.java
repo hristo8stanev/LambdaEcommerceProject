@@ -3,7 +3,7 @@ package pages.shoppingcartpage;
 import org.openqa.selenium.WebDriver;
 import pages.BasePage;
 
-import static base.Utils.getMappingByKey;
+import static core.Utils.getMappingByKey;
 
 public class ShoppingCartPage extends BasePage {
     public ShoppingCartPage(WebDriver driver) {

@@ -1,6 +1,18 @@
 package pages.shoppingcartpage;
 
-public class Map {
+import org.openqa.selenium.WebDriver;
+import pages.BaseMap;
 
-    //LOCATORS
+public class Map extends BaseMap {
+
+
+    public Map(WebDriver driver) {
+        super(driver);
+    }
+
+    //  public WebElement addButtonShoppingCart() {
+    //      return
+    //  }
+
+
 }

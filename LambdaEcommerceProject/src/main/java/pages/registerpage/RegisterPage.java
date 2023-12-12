@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import pages.BaseMap;
 import pages.BasePage;
 
-import static base.Utils.getMappingByKey;
+import static core.Utils.getMappingByKey;
 
 public class RegisterPage extends BasePage {
     private final Map registerPageMap;
@@ -34,6 +34,7 @@ public class RegisterPage extends BasePage {
         registerPageMap.continueButton().click();
     }
     public void assertRegisterTitle() {
+        //EDIT TITLE ELEMENT TEXT
         WebElement titleElement = baseMap.waitAndFindElement(By.xpath(
                 "//div[@id='content']//h1[contains(text(), 'Your Account Has Been Created!')]"));
         Assertions.assertEquals("Your Account Has Been Created!", titleElement.getText(),
