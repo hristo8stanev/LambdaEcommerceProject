@@ -33,6 +33,7 @@ public class ProductPage extends BasePage {
     public void assertComparePageHeader(String value) {
         Assertions.assertEquals(value, productPageMap.headerElement().getText(),
                 String.format("Expected header '%s' does not match the actual header.", value));
+        
     }
 
     public void assertAddProductToCompare(String value) {
