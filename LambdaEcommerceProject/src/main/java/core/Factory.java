@@ -6,10 +6,8 @@ import pages.checkoutpage.BillingInformation;
 import pages.loginpage.LoginInformation;
 import pages.registerpage.PersonalInformation;
 
-public class UserActions {
-
+public class Factory {
     private static final Faker faker = new Faker();
-
 
     public static PersonalInformation userDetails() {
         var registerUser = new PersonalInformation();
