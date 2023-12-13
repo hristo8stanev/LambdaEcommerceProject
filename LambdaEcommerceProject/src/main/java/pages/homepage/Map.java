@@ -17,9 +17,4 @@ public class Map extends BaseMap {
         return waitAndFindElement(By.xpath(
                 "//button[contains(@class, 'type-text') and text()='Search']"));
     }
-
-    public WebElement compareButton() {
-        return null;
-    }
-
 }

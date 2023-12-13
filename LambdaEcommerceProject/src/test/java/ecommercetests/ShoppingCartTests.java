@@ -17,6 +17,7 @@ public class ShoppingCartTests extends BaseTests {
         //ONE MORE ASSERT
     }
 
+
     @Test
     public void removeProductFromShoppingCartTest() {
         homePage.navigate();

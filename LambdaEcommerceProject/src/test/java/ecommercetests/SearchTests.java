@@ -4,7 +4,7 @@ import core.BaseTests;
 import org.junit.jupiter.api.Test;
 
 public class SearchTests extends BaseTests {
-    String existingProduct = "Samsung";
+    String existingProduct = "Sony VAIO";
     String nonExistingProduct = "bug123";
 
     @Test
@@ -22,4 +22,13 @@ public class SearchTests extends BaseTests {
         homePage.assertSearchResult(nonExistingProduct);
         homePage.assertErrorMessageIsShown();
     }
+
+//    @Test
+    //IN PROGRESS
+ //   public void changeTheQuantityFromQuickViewTest() {
+ //       homePage.navigate();
+ //       homePage.searchItems(existingProduct);
+ //       searchPage.enterQuickViewProduct(existingProduct);
+
+  //  }
 }

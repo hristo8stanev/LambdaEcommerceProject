@@ -33,12 +33,12 @@ public class RegisterPage extends BasePage {
         registerPageMap.agreeButton().click();
         registerPageMap.continueButton().click();
     }
-    public void assertRegisterTitle() {
-        //EDIT TITLE ELEMENT TEXT
-        WebElement titleElement = baseMap.waitAndFindElement(By.xpath(
-                "//div[@id='content']//h1[contains(text(), 'Your Account Has Been Created!')]"));
-        Assertions.assertEquals("Your Account Has Been Created!", titleElement.getText(),
+
+    public void assertRegisterTitle(String value) {
+        WebElement titleElement = baseMap.waitAndFindElement(By.xpath(String.format(
+                "//div[@id='content']//h1[contains(text(), '%s')]", value)));
+        String actualText = titleElement.getText();
+        Assertions.assertEquals(value, actualText,
                 "Expected title does not match the actual title.");
     }
-
 }

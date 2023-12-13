@@ -1,6 +1,8 @@
 package pages.checkoutpage;
 
-public class BillingAddress {
+public class BillingInformation {
+    private String firstName;
+    private String lastName;
     private String address;
     private String city;
     private String postCode;
@@ -29,6 +31,22 @@ public class BillingAddress {
 
     public void setPostCode(String postCode) {
         this.postCode = postCode;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getCountry() {

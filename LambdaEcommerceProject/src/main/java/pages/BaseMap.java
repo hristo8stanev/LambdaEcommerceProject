@@ -17,6 +17,11 @@ public class BaseMap {
     }
 
     public WebElement waitAndFindElement(By locator) {
-        return webDriverWait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        return webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    //WAIT TO BE CLICABLE
+    public WebElement waitElementToBeClickable(By locator) {
+        return webDriverWait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 }

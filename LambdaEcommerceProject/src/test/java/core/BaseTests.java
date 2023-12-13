@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import pages.checkoutpage.CheckoutPage;
 import pages.homepage.HomePage;
 import pages.loginpage.LoginPage;
+import pages.productpage.ProductPage;
 import pages.registerpage.RegisterPage;
 import pages.searchpage.SearchPage;
 import pages.shoppingcartpage.ShoppingCartPage;
@@ -22,6 +23,7 @@ public class BaseTests {
     public static RegisterPage registerPage;
     public static LoginPage loginPage;
     public static CheckoutPage checkoutPage;
+    public static ProductPage productPage;
 
 
     @BeforeAll
@@ -35,6 +37,7 @@ public class BaseTests {
         checkoutPage = new CheckoutPage(driver);
         registerPage = new RegisterPage(driver);
         loginPage = new LoginPage(driver);
+        productPage = new ProductPage(driver);
     }
 
     @AfterEach

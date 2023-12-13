@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import pages.BaseMap;
 import pages.BasePage;
 
@@ -30,6 +31,15 @@ public class SearchPage extends BasePage {
         searchPageMap.addToCart().click();
 
     }
+
+    public void clickFindProductButton(String value) {
+        searchPageMap.findProduct(value).click();
+    }
+    public void mouseHoverByUsingWebElement(WebElement element) {
+        Actions action = new Actions(driver);
+        action.moveToElement(element).perform();
+    }
+
 
     public void removeProductFromTheShoppingCart() {
         enterShoppingCart();

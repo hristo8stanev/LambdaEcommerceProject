@@ -17,7 +17,6 @@ public class HomePage extends BasePage {
         super(driver, getMappingByKey("homePage"));
         this.homePageMap = new Map(driver);
         this.baseMap = new BaseMap(driver);
-
     }
 
     @Override
@@ -26,8 +25,13 @@ public class HomePage extends BasePage {
     }
 
     public void searchItems(String product) {
+        homePageMap.searchField().clear();
         homePageMap.searchField().sendKeys(product);
         homePageMap.searchButton().click();
+    }
+    public void homeButton(){
+        WebElement searchProduct = baseMap.waitAndFindElement(By.xpath("//a[contains(@href, 'common/home')]"));
+        searchProduct.click();
 
     }
 
@@ -35,16 +39,11 @@ public class HomePage extends BasePage {
         WebElement searchProduct = baseMap.waitAndFindElement(By.xpath("//div[contains(@class, 'entry-content')]/h1"));
         Assertions.assertEquals("Search - " + product, searchProduct.getText(),
                 "Search result does not match the expected product: " + product);
-
     }
+
     public void assertErrorMessageIsShown() {
         WebElement errorMessage = baseMap.waitAndFindElement(By.xpath("//div[contains(@class, 'entry-content') and contains(@class, 'content-products')]"));
         Assertions.assertTrue(errorMessage.isDisplayed(),
                 "Error message is not displayed. Search result matches the expected product.");
-    }
-
-    public void compareItem() {
-
-        //IN PROGRESS
     }
 }

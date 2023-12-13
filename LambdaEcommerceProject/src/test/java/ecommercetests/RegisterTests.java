@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class RegisterTests extends BaseTests {
 
+    String expectedTitle = "Your Account Has Been Created!";
     public static final String SUCCESS_REGISTER = "https://ecommerce-playground.lambdatest.io/index.php?route=account/success";
 
     @Test
@@ -14,7 +15,7 @@ public class RegisterTests extends BaseTests {
         var registrationDetails = UserActions.userDetails();
         registerPage.navigate();
         registerPage.register(registrationDetails);
-        registerPage.assertRegisterTitle();
+        registerPage.assertRegisterTitle(expectedTitle);
         registerPage.assertUrlPage(SUCCESS_REGISTER);
     }
 }
