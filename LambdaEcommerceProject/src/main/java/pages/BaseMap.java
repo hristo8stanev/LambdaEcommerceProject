@@ -20,6 +20,7 @@ public class BaseMap {
         return webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
+
     //WAIT TO BE CLICABLE
     public WebElement waitElementToBeClickable(By locator) {
         return webDriverWait.until(ExpectedConditions.elementToBeClickable(locator));

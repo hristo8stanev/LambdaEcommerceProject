@@ -22,13 +22,4 @@ public class SearchTests extends BaseTests {
         homePage.assertSearchResult(nonExistingProduct);
         homePage.assertErrorMessageIsShown();
     }
-
-//    @Test
-    //IN PROGRESS
- //   public void changeTheQuantityFromQuickViewTest() {
- //       homePage.navigate();
- //       homePage.searchItems(existingProduct);
- //       searchPage.enterQuickViewProduct(existingProduct);
-
-  //  }
 }

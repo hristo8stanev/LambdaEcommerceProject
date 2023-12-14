@@ -33,18 +33,4 @@ public class Map extends BaseMap {
     public WebElement removeButtonShoppingCart() {
         return waitAndFindElement(By.xpath("//button[contains(@onclick, 'cart.remove')]"));
     }
-
-    // public WebElement quickViewButton() {
-    //     return waitElementToBeClickable(By.xpath("//button[@title= 'Quick view']"));
-    // }
-    public WebElement quickViewButton() {
-        return waitAndFindElement(By.xpath("//i[text()='fas fa-eye']"));
-    }
-
-    public WebElement compareButton() {
-        return waitAndFindElement(By.partialLinkText("Product Compare"));
-    }
-
-
-
 }

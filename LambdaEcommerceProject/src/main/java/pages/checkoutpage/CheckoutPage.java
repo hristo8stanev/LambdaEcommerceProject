@@ -1,6 +1,6 @@
 package pages.checkoutpage;
 
-import core.UserActions;
+import core.Factory;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import pages.BaseMap;
@@ -46,8 +46,8 @@ public class CheckoutPage extends BasePage {
     }
 
     public void checkout() {
-        var personalDetails = UserActions.userDetails();
-        var billingDetails = UserActions.billingInformation();
+        var personalDetails = Factory.userDetails();
+        var billingDetails = Factory.billingInformation();
         addPersonalDetails(personalDetails);
         addBillingDetails(billingDetails);
         agreeToTermsAndConditions();

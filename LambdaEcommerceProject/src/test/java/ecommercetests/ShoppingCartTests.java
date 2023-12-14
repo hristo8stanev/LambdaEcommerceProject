@@ -7,13 +7,15 @@ public class ShoppingCartTests extends BaseTests {
 
     String product = "Sony VAIO";
     String expectedMessage = "Your shopping cart is empty!";
+    String expectedUrl = "https://ecommerce-playground.lambdatest.io/index.php?route=checkout/cart";
 
     @Test
     public void addProductToShoppingCartTest() {
         homePage.navigate();
         homePage.searchItems(product);
         searchPage.addProductToShoppingCart(product);
-        searchPage.assertProductSuccessfullyAddedToCart(product);
+        homePage.assertUrlPage(expectedUrl);
+        searchPage.assertProductSuccessfullyAddedToCart();
         //ONE MORE ASSERT
     }
 
@@ -25,6 +27,8 @@ public class ShoppingCartTests extends BaseTests {
         searchPage.addProductToShoppingCart(product);
         searchPage.removeProductFromTheShoppingCart();
         searchPage.assertProductRemoveFromTheCart(expectedMessage);
+        homePage.assertUrlPage(expectedUrl);
+        searchPage.assertProductSuccessfullyRemoved();
         //ONE MORE ASSERT
 
 

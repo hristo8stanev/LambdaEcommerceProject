@@ -1,7 +1,7 @@
 package ecommercetests;
 
 import core.BaseTests;
-import core.UserActions;
+import core.Factory;
 import org.junit.jupiter.api.Test;
 
 
@@ -12,7 +12,7 @@ public class RegisterTests extends BaseTests {
 
     @Test
     public void registerWithValidCredentialsTest() {
-        var registrationDetails = UserActions.userDetails();
+        var registrationDetails = Factory.userDetails();
         registerPage.navigate();
         registerPage.register(registrationDetails);
         registerPage.assertRegisterTitle(expectedTitle);

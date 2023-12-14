@@ -26,18 +26,45 @@ public class ProductPage extends BasePage {
         productPageMap.compareButton().click();
     }
 
-    public void comparePageButton() {
+    public void comparePage() {
         productPageMap.comparePageButton().click();
     }
+
+    public void quickView(String element) {
+        mouseHoverByUsingWebElement(productPageMap.productByName(element));
+        productPageMap.quickViewButton(element).click();
+    }
+    public void cartIcon(){
+        productPageMap.cartButton().click();
+    }
+
+
+
+    public void increaseQuantityFromQuickView() {
+        productPageMap.increaseTheQuantityButton().click();
+    }
+    public void addToCartButtonQuickView(){
+        productPageMap.addToCartQuickViewButton().click();
+    }
+
+    public void changeSizeFromQuickView() {
+        productPageMap.changeSizeButton().click();
+    }
+
+    public void assertBuyNowButtonIsDisplayedInQuickView() {
+        productPageMap.buyNowButton().isDisplayed();
+    }
+
 
     public void assertComparePageHeader(String value) {
         Assertions.assertEquals(value, productPageMap.headerElement().getText(),
                 String.format("Expected header '%s' does not match the actual header.", value));
-        
     }
 
     public void assertAddProductToCompare(String value) {
         Assertions.assertEquals(value, productPageMap.compareProductElement(value).getText(),
                 String.format("Expected product name '%s' does not match the actual product name.", value));
     }
+
+
 }

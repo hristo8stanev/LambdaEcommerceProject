@@ -1,7 +1,7 @@
 package ecommercetests;
 
 import core.BaseTests;
-import core.UserActions;
+import core.Factory;
 import org.junit.jupiter.api.Test;
 
 public class CheckoutTests extends BaseTests {
@@ -29,7 +29,7 @@ public class CheckoutTests extends BaseTests {
 
     @Test
     public void authenticatedUserCheckoutTest() {
-        var loginInfo = UserActions.loginUser(emailAddress, password);
+        var loginInfo = Factory.loginUser(emailAddress, password);
         loginPage.navigate();
         loginPage.login(loginInfo);
         checkoutPage.navigate();

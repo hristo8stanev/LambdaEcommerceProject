@@ -1,7 +1,7 @@
 package ecommercetests;
 
 import core.BaseTests;
-import core.UserActions;
+import core.Factory;
 import org.junit.jupiter.api.Test;
 
 public class LoginTests extends BaseTests {
@@ -15,7 +15,7 @@ public class LoginTests extends BaseTests {
 
     @Test
     public void loginWithValidCredentialsTest() {
-        var loginInfo = UserActions.loginUser(emailAddress, password);
+        var loginInfo = Factory.loginUser(emailAddress, password);
         loginPage.navigate();
         loginPage.login(loginInfo);
         loginPage.assertAuthenticatedUser();
@@ -25,7 +25,7 @@ public class LoginTests extends BaseTests {
     }
     @Test
     public void loginWithEmptyFieldsTest() {
-        var loginInfo = UserActions.loginUser("", "");
+        var loginInfo = Factory.loginUser("", "");
         loginPage.navigate();
         loginPage.login(loginInfo);
         loginPage.assertErrorMessageIsShown();
@@ -33,7 +33,7 @@ public class LoginTests extends BaseTests {
 
     @Test
     public void loginWithInvalidCredentialsTest(){
-        var loginInfo = UserActions.loginUser(invalidEmail,invalidPassword);
+        var loginInfo = Factory.loginUser(invalidEmail,invalidPassword);
         loginPage.navigate();
         loginPage.login(loginInfo);
         loginPage.assertErrorMessageIsShown();

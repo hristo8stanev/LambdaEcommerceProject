@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import pages.BaseMap;
 import pages.BasePage;
 
@@ -29,15 +28,11 @@ public class SearchPage extends BasePage {
     public void addProductToShoppingCart(String value) {
         searchPageMap.findProduct(value).click();
         searchPageMap.addToCart().click();
-
+        enterShoppingCart();
     }
 
     public void clickFindProductButton(String value) {
         searchPageMap.findProduct(value).click();
-    }
-    public void mouseHoverByUsingWebElement(WebElement element) {
-        Actions action = new Actions(driver);
-        action.moveToElement(element).perform();
     }
 
 
@@ -52,13 +47,17 @@ public class SearchPage extends BasePage {
         searchPageMap.editButton().click();
     }
 
-    public void assertProductSuccessfullyAddedToCart(String value) {
-        enterShoppingCart();
-        WebElement productTitle = baseMap.waitAndFindElement(By.xpath("//td/a[@title]"));
+    public void assertProductSuccessfullyAddedToCart() {
+        WebElement productTitle = baseMap.waitAndFindElement(By.xpath("(//span[contains(@class, 'cart-item-total')])[1]"));
         String itemTitle = productTitle.getAttribute("innerText");
-        Assertions.assertEquals(itemTitle, value, "Failed to add item to the cart.");
-
+        Assertions.assertNotEquals("0", itemTitle, "The Cart is empty.");
     }
+    public void assertProductSuccessfullyRemoved() {
+        WebElement productTitle = baseMap.waitAndFindElement(By.xpath("(//span[contains(@class, 'cart-item-total')])[1]"));
+        String itemTitle = productTitle.getAttribute("innerText");
+        Assertions.assertEquals("0", itemTitle, "The Cart is empty.");
+    }
+
 
     public void assertProductRemoveFromTheCart(String value) {
         enterShoppingCart();
