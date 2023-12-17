@@ -101,54 +101,78 @@ The tests will be conducted both independently and in groups to ensure thorough 
 
 ### User Register:
 
-- **Test Case 1:** Verify that users can register for a new account successfully. (Priority: Highest - 1)
-- **Test Case 2:** Verify that a user cannot register with an email address that is already registered. (Priority: High - 2)
-- **Test Case 3:** Verify that a user cannot register with a weak password. (Priority: High - 2)
+- **Test Case 1:** Verify that users can register for a new account successfully.
+ (Priority: Highest - 1)
+- **Test Case 2:** Verify that a user cannot register with an email address that is already registered.
+ (Priority: High - 2)
+- **Test Case 3:** Verify that a user cannot register with a weak password.
+ (Priority: High - 2)
 
 ### Login Tests:
 
-- **Test Case 4:** Verify that a registered user can successfully log in with valid credentials. (Priority: Highest - 1)
-- **Test Case 5:** Verify that a user cannot log in with invalid credentials. (Priority: High - 2)
+- **Test Case 4:** Verify that a registered user can successfully log in with valid credentials.
+ (Priority: Highest - 1)
+- **Test Case 5:** Verify that a user cannot log in with invalid credentials.
+ (Priority: High - 2)
 
 ### Forgotten Password:
 
-- **Test Case 6:** Verify that a user can request a password reset. (Priority: Medium - 3)
-- **Test Case 7:** Verify that the reset password link sent to the user's email is functional. (Priority: Medium - 3)
+- **Test Case 6:** Verify that a user can request a password reset.
+ (Priority: Medium - 3)
+- **Test Case 7:** Verify that the reset password link sent to the user's email is functional.
+ (Priority: Medium - 3)
 
 ### Search Tests:
 
-- **Test Case 8:** Verify that the search functionality returns relevant results for a basic search query. (Priority: High - 2)
-- **Test Case 9:** Verify that advanced search options (categories) work as expected. (Priority: High - 2)
+- **Test Case 8:** Verify that the search functionality returns relevant results for a basic search query.
+ (Priority: High - 2)
+- **Test Case 9:** Verify that advanced search options (categories) work as expected.
+ (Priority: High - 2)
 
 ### Product Tests:
 
-- **Test Case 10:** Verify that products can be sorted by size. (Priority: Medium - 3)
-- **Test Case 11:** Verify that products can be sorted by color. (Priority: Medium - 3)
+- **Test Case 10:** Verify that products can be sorted by size.
+ (Priority: Medium - 3)
+- **Test Case 11:** Verify that products can be sorted by color.
+ (Priority: Medium - 3)
 
 ### Shopping Cart Tests:
 
-- **Test Case 12:** Verify that a user can add a product to the shopping cart. (Priority: Highest - 1)
-- **Test Case 13:** Verify that a user can change the quantity of a product in the shopping cart. (Priority: High - 2)
-- **Test Case 14:** Verify that a user can remove a product from the shopping cart. (Priority: High - 2)
+- **Test Case 12:** Verify that a user can add a product to the shopping cart.
+ (Priority: Highest - 1)
+- **Test Case 13:** Verify that a user can change the quantity of a product in the shopping cart.
+ (Priority: High - 2)
+- **Test Case 14:** Verify that a user can remove a product from the shopping cart.
+ (Priority: High - 2)
 
 ### Wishlist Tests:
 
-- **Test Case 15:** Verify that a user can add a product to their wishlist. (Priority: Medium - 3)
-- **Test Case 16:** Verify that a user can remove a product from their wishlist. (Priority: Medium - 3)
+- **Test Case 15:** Verify that a user can add a product to their wishlist.
+ (Priority: Medium - 3)
+- **Test Case 16:** Verify that a user can remove a product from their wishlist.
+ (Priority: Medium - 3)
 
 ### Compare Product Tests:
 
-- **Test Case 17:** Verify that a user can add products to the comparison list. (Priority: Medium - 3)
-- **Test Case 18:** Verify that a user can remove products from the comparison list. (Priority: Medium - 3)
+- **Test Case 17:** Verify that a user can add products to the comparison list.
+ (Priority: Medium - 3)
+- **Test Case 18:** Verify that a user can remove products from the comparison list.
+ (Priority: Medium - 3)
 
 ### Checkout Tests:
 
-- **Test Case 19:** Verify that a guest user can successfully complete the checkout process. (Priority: High - 2)
-- **Test Case 20:** Verify that a logged-in user can successfully complete the checkout process. (Priority: Highest - 1)
+- **Test Case 19:** Verify that a guest user can successfully complete the checkout process.
+ (Priority: High - 2)
+- **Test Case 20:** Verify that a logged-in user can successfully complete the checkout process.
+ (Priority: Highest - 1)
 
 ### Quick View Tests:
 
-- **Test Case 21:** Verify that a user can change the quantity of a product from the Quick View. (Priority: High - 2)
-- **Test Case 22:** Verify that a user can change the size of a product from the Quick View. (Priority: High - 2)
-- **Test Case 23:** Verify that a user can change the color of a product from the Quick View. (Priority: High - 2)
-- **Test Case 24:** Verify that a user can add a product to the cart from the Quick View. (Priority: High - 2)
+- **Test Case 21:** Verify that a user can change the quantity of a product from the Quick View.
+ (Priority: High - 2)
+- **Test Case 22:** Verify that a user can change the size of a product from the Quick View.
+ (Priority: High - 2)
+- **Test Case 23:** Verify that a user can change the color of a product from the Quick View.
+ (Priority: High - 2)
+- **Test Case 24:** Verify that a user can add a product to the cart from the Quick View.
+ (Priority: High - 2)
