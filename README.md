@@ -232,16 +232,16 @@ The tests will be conducted both independently and in groups to ensure thorough 
 - **Test Case 50:** Check that the Quick View displays essential product information.
      - (Priority: High - 2)
 - **Test Case 51:** Navigate to the Quick View from the product page.
-(Priority: High - 2)
+   - (Priority: High - 2)
 - **Test Case 52:** Verify that a user can change the quantity of a product from the Quick View.
- (Priority: High - 2)
+   -  (Priority: High - 2)
 - **Test Case 53:** Verify that a user can change the size of a product from the Quick View.
- (Priority: High - 2)
+   -  (Priority: High - 2)
 - **Test Case 54:** Verify that a user can change the color of a product from the Quick View.
- (Priority: High - 2)
+   -  (Priority: High - 2)
 - **Test Case 55:** Verify that a user can add a product to the cart from the Quick View.
- (Priority: High - 2)
+   - (Priority: High - 2)
 - **Test Case 56:** Ensure that the correct item with customized attributes is added to the cart.
-(Priority: High - 2)
+   - (Priority: High - 2)
 - **Test Case 57:** Validate that the cart reflects the correct quantity and total price.
-(Priority: High - 2)
+   - (Priority: High - 2)
