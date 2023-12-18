@@ -152,19 +152,19 @@ The tests will be conducted both independently and in groups to ensure thorough 
 - **Test Case 18:** Verify that products can be sorted by color.
     - (Priority: Medium - 3)
 - **Test Case 19:** Add multiple products to the comparison list.
-   - (Priority: High - 2)
+    - (Priority: High - 2)
 - **Test Case 20:** Verify the functionality to sort products by name in ascending order (A-Z).
-   - (Priority: High - 2)
+    - (Priority: High - 2)
 - **Test Case 21:** Verify the functionality to sort products by price in ascending order (Low to High).
-   - (Priority: High - 2)
+    - (Priority: High - 2)
 - **Test Case 22:** Verify that the comparison screen displays the selected products.
-   - (Priority: High - 2)
+    - (Priority: High - 2)
 - **Test Case 23:** Remove products from the comparison list.
-   - (Priority: High - 2)
+    - (Priority: High - 2)
 - **Test Case 24:** Verify functionality of the "Buy Now" button.
-   - (Priority: Highest - 1)
+    - (Priority: Highest - 1)
 **Test Case 25:** Verify functionality of the "Size Chart" button.
-   - (Priority: High - 2)
+    - (Priority: High - 2)
 **Test Case 26:** Verify functionality of the "Ask a Question" button.
    - (Priority: Medium - 3)
 - **Test Case 27:** Verify functionality of the "Write a Review" button.
