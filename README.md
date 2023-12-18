@@ -130,7 +130,7 @@ The tests will be conducted both independently and in groups to ensure thorough 
 - **Test Case 10:** Check for the availability of a "Forgot Password" functionality.
      - (Priority: High - 2)
 - **Test Case 11:** Verify that the reset password link sent to the user's email is functional.
-      - (Priority: High - 2)
+   - (Priority: High - 2)
 - **Test Case 12:** Try to login with changed password.
      - (Priority: High - 2)
 
@@ -166,7 +166,7 @@ The tests will be conducted both independently and in groups to ensure thorough 
 **Test Case 25:** Verify functionality of the "Size Chart" button.
    - (Priority: High - 2)
 **Test Case 26:** Verify functionality of the "Ask a Question" button.
-    - (Priority: Medium - 3)
+   - (Priority: Medium - 3)
 - **Test Case 27:** Verify functionality of the "Write a Review" button.
    - (Priority: Medium - 3)
 
