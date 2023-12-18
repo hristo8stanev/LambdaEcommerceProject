@@ -163,9 +163,9 @@ The tests will be conducted both independently and in groups to ensure thorough 
     - (Priority: High - 2)
 - **Test Case 24:** Verify functionality of the "Buy Now" button.
     - (Priority: Highest - 2)
-**Test Case 25:** Verify functionality of the "Size Chart" button.
+- **Test Case 25:** Verify functionality of the "Size Chart" button.
     - (Priority: High - 2)
-**Test Case 26:** Verify functionality of the "Ask a Question" button.
+- **Test Case 26:** Verify functionality of the "Ask a Question" button.
     - (Priority: Medium - 3)
 - **Test Case 27:** Verify functionality of the "Write a Review" button.
    - (Priority: Medium - 3)
