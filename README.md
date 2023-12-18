@@ -105,74 +105,142 @@ The tests will be conducted both independently and in groups to ensure thorough 
  (Priority: Highest - 1)
 - **Test Case 2:** Verify that a user cannot register with an email address that is already registered.
  (Priority: High - 2)
-- **Test Case 3:** Verify that a user cannot register with a weak password.
+- **Test Case 3:** Verify that a user cannot register withouth clicking on agree privacy policy button.
+ (Priority: High - 2)
+- **Test Case 4:** Verify that a user cannot register with a weak password.
+ (Priority: High - 2)
+- **Test Case 5:** Verify that a error messages for fields.
  (Priority: High - 2)
 
 ### Login Tests:
 
-- **Test Case 4:** Verify that a registered user can successfully log in with valid credentials.
+- **Test Case 6:** Verify that a registered user can successfully log in with valid credentials.
  (Priority: Highest - 1)
-- **Test Case 5:** Verify that a user cannot log in with invalid credentials.
+- **Test Case 7:** Verify that a user cannot log in with invalid credentials.
  (Priority: High - 2)
+- **Test Case 8:** Validate the display of appropriate error messages for invalid login attempts.
+ (Priority: High - 2)
+- **Test Case 9:** Login with empty fields.
+(Priority: High - 2)
+
 
 ### Forgotten Password:
 
-- **Test Case 6:** Verify that a user can request a password reset.
- (Priority: Medium - 3)
-- **Test Case 7:** Verify that the reset password link sent to the user's email is functional.
- (Priority: Medium - 3)
+- **Test Case 10:** Check for the availability of a "Forgot Password" functionality.
+  (Priority: High - 2)
+- **Test Case 11:** Verify that the reset password link sent to the user's email is functional.
+   (Priority: High - 2)
+- **Test Case 12:** Try to login with changed password.
+  (Priority: High - 2)
 
 ### Search Tests:
 
-- **Test Case 8:** Verify that the search functionality returns relevant results for a basic search query.
+- **Test Case 13:** Verify that the search functionality returns relevant results for a search query.
  (Priority: High - 2)
-- **Test Case 9:** Verify that advanced search options (categories) work as expected.
+- **Test Case 14:** Validate that relevant results are displayed when a valid search term is entered.
+-  (Priority: High - 2)
+- **Test Case 15:** Test Case 3: Check that no results are shown for an invalid search term.
+-  (Priority: Medium - 3)
+- **Test Case 16:** Verify that advanced search options (categories) work as expected.
  (Priority: High - 2)
 
 ### Product Tests:
 
-- **Test Case 10:** Verify that products can be sorted by size.
+- **Test Case 17:** Verify that products can be sorted by size.
  (Priority: Medium - 3)
-- **Test Case 11:** Verify that products can be sorted by color.
+- **Test Case 18:** Verify that products can be sorted by color.
+ (Priority: Medium - 3)
+- **Test Case 19:** Add multiple products to the comparison list.
+(Priority: High - 2)
+- **Test Case 20:** Verify the functionality to sort products by name in ascending order (A-Z).
+(Priority: High - 2)
+- **Test Case 21:** Verify the functionality to sort products by price in ascending order (Low to High).
+(Priority: High - 2)
+- **Test Case 22:** Verify that the comparison screen displays the selected products.
+(Priority: High - 2)
+- **Test Case 23:** Remove products from the comparison list.
+(Priority: High - 2)
+- **Test Case 24:** Verify functionality of the "Buy Now" button.
+(Priority: Highest - 1)
+**Test Case 25:** Verify functionality of the "Size Chart" button.
+(Priority: High - 2)
+**Test Case 26:** Verify functionality of the "Ask a Question" button.
+ (Priority: Medium - 3)
+- **Test Case 27:** Verify functionality of the "Write a Review" button.
  (Priority: Medium - 3)
 
 ### Shopping Cart Tests:
 
-- **Test Case 12:** Verify that a user can add a product to the shopping cart.
+- **Test Case 28:** Add items to the shopping cart from product pages.
  (Priority: Highest - 1)
-- **Test Case 13:** Verify that a user can change the quantity of a product in the shopping cart.
+- **Test Case 29:** Verify that a user can change the quantity of a product in the shopping cart.
  (Priority: High - 2)
-- **Test Case 14:** Verify that a user can remove a product from the shopping cart.
+- **Test Case 30:** Verify that the shopping cart displays the correct quantity and total price.
+(Priority: Highest - 1)
+- **Test Case 31:** Verify that a user can remove a product from the shopping cart.
  (Priority: High - 2)
+- **Test Case 32:** Ensure that the shopping cart is emptied after the checkout process.
+(Priority: Highest - 1)
+- **Test Case 33:** Verify that a flat shipping rate is recalculated based on the size of the items in the shopping cart.
+(Priority: Highest - 1)
+- **Test Case 34:** Verify the maximum number of items allowed in the shopping cart.
+(Priority: Highest - 1)
+
 
 ### Wishlist Tests:
 
-- **Test Case 15:** Verify that a user can add a product to their wishlist.
+- **Test Case 35:** Verify that a user can add a product to their wishlist.
  (Priority: Medium - 3)
-- **Test Case 16:** Verify that a user can remove a product from their wishlist.
+- **Test Case 36:** Verify that a user can remove a product from their wishlist.
  (Priority: Medium - 3)
 
 ### Compare Product Tests:
 
-- **Test Case 17:** Verify that a user can add products to the comparison list.
+- **Test Case 37:** Verify that a user can add products to the comparison list.
  (Priority: Medium - 3)
-- **Test Case 18:** Verify that a user can remove products from the comparison list.
+- **Test Case 38:** Verify that a user can remove products from the comparison list.
  (Priority: Medium - 3)
 
 ### Checkout Tests:
 
-- **Test Case 19:** Verify that a guest user can successfully complete the checkout process.
+- **Test Case 39:** Verify that a guest user can successfully complete the checkout process.
  (Priority: High - 2)
-- **Test Case 20:** Verify that a logged-in user can successfully complete the checkout process.
+- **Test Case 40:** Verify that a logged-in user can successfully complete the checkout process.
  (Priority: Highest - 1)
+- **Test Case 41:** Confirm that users can enter and save shipping information.
+ (Priority: Highest - 1)
+- **Test Case 42:** Validate the accuracy of the order summary before payment.
+ (Priority: High - 2)
+- **Test Case 43:** Complete guest checkout by registering an account during the checkout process.
+  (Priority: Medium - 3)
+- **Test Case 44:** Successfully log in during the checkout process and complete the purchase.
+  (Priority: Medium - 3)
+  - **Test Case 45:** Validate the accuracy of the "Your Personal Details" form during account creation.
+   (Priority: Highest - 1)
+- **Test Case 46:** Successfully add comments about the order during the checkout process.
+    (Priority: Low - 4)
+- **Test Case 47:** Validate that clicking the "Edit" button navigates to the previous page or step.
+  (Priority: Highest - 1)
+- **Test Case 48:** Verify the display of a success message after confirming the order.
+  - **Priority: High (2)**
 
 ### Quick View Tests:
 
-- **Test Case 21:** Verify that a user can change the quantity of a product from the Quick View.
+- **Test Case 49:** Verify that the Quick View can be closed without issues.
+(Priority: High - 2)
+- **Test Case 50:** Check that the Quick View displays essential product information.
+(Priority: High - 2)
+- **Test Case 51:** Navigate to the Quick View from the product page.
+(Priority: High - 2)
+- **Test Case 52:** Verify that a user can change the quantity of a product from the Quick View.
  (Priority: High - 2)
-- **Test Case 22:** Verify that a user can change the size of a product from the Quick View.
+- **Test Case 53:** Verify that a user can change the size of a product from the Quick View.
  (Priority: High - 2)
-- **Test Case 23:** Verify that a user can change the color of a product from the Quick View.
+- **Test Case 54:** Verify that a user can change the color of a product from the Quick View.
  (Priority: High - 2)
-- **Test Case 24:** Verify that a user can add a product to the cart from the Quick View.
+- **Test Case 55:** Verify that a user can add a product to the cart from the Quick View.
  (Priority: High - 2)
+- **Test Case 56:** Ensure that the correct item with customized attributes is added to the cart.
+(Priority: High - 2)
+- **Test Case 57:** Validate that the cart reflects the correct quantity and total price.
+(Priority: High - 2)
