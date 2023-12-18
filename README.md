@@ -98,6 +98,8 @@ The tests will be conducted both independently and in groups to ensure thorough 
    - A condition involving non-critical system errors, minor documentation issues, or low-impact product inquiries. End-user functionality remains largely unaffected, and the problem may not be urgent.
 
 
+
+
 ## Abstract Test Cases
 
 ### User Register:
