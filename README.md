@@ -4,6 +4,7 @@
 - [Overview](#overview)
 - [Testing Strategy](#testing-strategy)
 - [Abstract Test Cases](#abstract-test-cases)
+- [Report](#report)
 
 ## Overview
 This repository houses the automated tests for the E-commerce Playground platform. The contents include documentation, such as the Test Strategy, a list of Test Cases in the Automation Backlog, and the Test Report file. The IntelliJ project contains automated tests covering various functionalities of the platform.
