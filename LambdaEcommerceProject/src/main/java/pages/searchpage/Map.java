@@ -29,6 +29,12 @@ public class Map extends BaseMap {
     public WebElement editButton() {
         return waitAndFindElement(By.xpath("//a[contains(@href, 'checkout/cart')]"));
     }
+    public WebElement successfullyAddedProductToCart(){
+        return waitAndFindElement(By.xpath("(//span[contains(@class, 'cart-item-total')])[1]"));
+    }
+    public WebElement successfullyRemovedProductToCart(){
+        return waitAndFindElement(By.xpath("(//span[contains(@class, 'cart-item-total')])[1]"));
+    }
 
     public WebElement removeButtonShoppingCart() {
         return waitAndFindElement(By.xpath("//button[contains(@onclick, 'cart.remove')]"));

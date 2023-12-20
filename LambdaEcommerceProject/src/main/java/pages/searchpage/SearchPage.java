@@ -1,9 +1,7 @@
 package pages.searchpage;
 
 import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import pages.BaseMap;
 import pages.BasePage;
 
@@ -48,14 +46,12 @@ public class SearchPage extends BasePage {
     }
 
     public void assertProductSuccessfullyAddedToCart() {
-        WebElement productTitle = baseMap.waitAndFindElement(By.xpath("(//span[contains(@class, 'cart-item-total')])[1]"));
-        String itemTitle = productTitle.getAttribute("innerText");
+        String itemTitle = searchPageMap.successfullyAddedProductToCart().getAttribute("innerText");
         Assertions.assertNotEquals("0", itemTitle, "The Cart is empty.");
     }
 
     public void assertProductSuccessfullyRemoved() {
-        WebElement productTitle = baseMap.waitAndFindElement(By.xpath("(//span[contains(@class, 'cart-item-total')])[1]"));
-        String itemTitle = productTitle.getAttribute("innerText");
+        String itemTitle = searchPageMap.successfullyRemovedProductToCart().getAttribute("innerText");
         Assertions.assertEquals("0", itemTitle, "The Cart is empty.");
     }
 
