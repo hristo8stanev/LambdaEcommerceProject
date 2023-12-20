@@ -4,7 +4,7 @@
 - [Overview](#overview)
 - [Testing Strategy](#testing-strategy)
 - [Abstract Test Cases](#abstract-test-cases)
-- [Report](#report)
+- [Surefire Report](#surefire-report)
 
 ## Overview
 This repository houses the automated tests for the E-commerce Playground platform. The contents include documentation, such as the Test Strategy, a list of Test Cases in the Automation Backlog, and the Test Report file. The IntelliJ project contains automated tests covering various functionalities of the platform.
@@ -247,3 +247,9 @@ The tests will be conducted both independently and in groups to ensure thorough 
    - (Priority: High - 2)
 - **Test Case 57:** Validate that the cart reflects the correct quantity and total price.
    - (Priority: High - 2)
+
+## Surefire Report
+- **Double-Click to Run Tests:** 
+  - Execute the tests by double-clicking on the surefireReport.bat file.
+- **Generating HTML Report:**
+  - The test report will be generated in the LambdaEcommerceProject\LambdaEcommerceProject\target\sitesurefire-report.html file.
