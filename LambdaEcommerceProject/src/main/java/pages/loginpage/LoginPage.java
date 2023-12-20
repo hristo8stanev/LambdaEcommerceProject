@@ -1,9 +1,7 @@
 package pages.loginpage;
 
 import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import pages.BaseMap;
 import pages.BasePage;
 
@@ -30,19 +28,22 @@ public class LoginPage extends BasePage {
         loginPageMap.loginButton().click();
     }
 
+    public void myAccountMethod() {
+        loginPageMap.myAccountButton().click();
+    }
+
+
     public void logoutUser() {
         loginPageMap.logoutButton().click();
     }
 
     public void assertAuthenticatedUser() {
-        WebElement logoutElement = baseMap.waitAndFindElement(By.xpath("(//a[contains(@href, 'logout')])[2]"));
-        Assertions.assertTrue(logoutElement.isDisplayed(),
+        Assertions.assertTrue(loginPageMap.logoutButton().isDisplayed(),
                 "Logout button is not displayed. User may not be authenticated.");
     }
 
     public void assertErrorMessageIsShown() {
-        WebElement errorMessage = baseMap.waitAndFindElement(By.xpath("//div[contains(@class, 'alert-danger')]"));
-        Assertions.assertTrue(errorMessage.isDisplayed(),
+        Assertions.assertTrue(loginPageMap.errorMessageInvalidCredentials().isDisplayed(),
                 "Error message is not displayed. User logged in with invalid credentials.");
     }
 }

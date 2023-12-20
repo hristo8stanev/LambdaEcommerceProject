@@ -52,6 +52,7 @@ public class SearchPage extends BasePage {
         String itemTitle = productTitle.getAttribute("innerText");
         Assertions.assertNotEquals("0", itemTitle, "The Cart is empty.");
     }
+
     public void assertProductSuccessfullyRemoved() {
         WebElement productTitle = baseMap.waitAndFindElement(By.xpath("(//span[contains(@class, 'cart-item-total')])[1]"));
         String itemTitle = productTitle.getAttribute("innerText");
@@ -61,8 +62,8 @@ public class SearchPage extends BasePage {
 
     public void assertProductRemoveFromTheCart(String value) {
         enterShoppingCart();
-        WebElement title = baseMap.waitAndFindElement(By.xpath(String.format("//div[@id='content']//p[contains(text(), '%s')]", value)));
-        String actualText = title.getText();
-        Assertions.assertTrue(actualText.contains(value), "Expected text not found in the element.");
+        String actualText = searchPageMap.removedProduct(value).getText();
+        Assertions.assertTrue(actualText.contains(value),
+                String.format("The product '%s' is still present in the Shopping Cart.", value));
     }
 }

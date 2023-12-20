@@ -3,20 +3,20 @@ package ecommercetests;
 import core.BaseTests;
 import org.junit.jupiter.api.Test;
 
+import static core.Utils.getMappingByKey;
+
 public class ShoppingCartTests extends BaseTests {
 
     String product = "Sony VAIO";
     String expectedMessage = "Your shopping cart is empty!";
-    String expectedUrl = "https://ecommerce-playground.lambdatest.io/index.php?route=checkout/cart";
 
     @Test
     public void addProductToShoppingCartTest() {
         homePage.navigate();
         homePage.searchItems(product);
         searchPage.addProductToShoppingCart(product);
-        homePage.assertUrlPage(expectedUrl);
+        homePage.assertUrlPage(getMappingByKey("shoppingCartPage"));
         searchPage.assertProductSuccessfullyAddedToCart();
-        //ONE MORE ASSERT
     }
 
 
@@ -27,10 +27,7 @@ public class ShoppingCartTests extends BaseTests {
         searchPage.addProductToShoppingCart(product);
         searchPage.removeProductFromTheShoppingCart();
         searchPage.assertProductRemoveFromTheCart(expectedMessage);
-        homePage.assertUrlPage(expectedUrl);
+        homePage.assertUrlPage(getMappingByKey("shoppingCartPage"));
         searchPage.assertProductSuccessfullyRemoved();
-        //ONE MORE ASSERT
-
-
     }
 }

@@ -12,6 +12,7 @@ public class LoginTests extends BaseTests {
     String invalidEmail = "test123";
     String invalidPassword= "123123";
 
+    //ADD NAVIGATE IN BEFORE METHOD
 
     @Test
     public void loginWithValidCredentialsTest() {

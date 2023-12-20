@@ -46,25 +46,32 @@ public class Map extends BaseMap {
         return waitAndFindElement(By.id("input-payment-postcode"));
     }
 
-    public WebElement continueButton() {
-        return waitAndFindElement(By.id("button-save"));
-    }
-    public WebElement confirmButton(){
-        return waitElementToBeClickable(By.id("button-confirm"));
-    }
-    public WebElement privacyPolicy() {
-        return waitElementToBeClickable(By.xpath("//label[@for='input-account-agree']"));
-    }
-    public WebElement termsAndConditionsButton() {
-        return waitElementToBeClickable(By.xpath("//label[@for='input-agree']"));
-    }
-    public WebElement billingAddressExisting() {
-        return waitElementToBeClickable(By.xpath("//div/input[@id='input-payment-address-existing']/following-sibling::label"));
-    }
     public WebElement paymentButton() {
         return waitElementToBeClickable(By.xpath("//div/input[@name='payment_method']/following-sibling::label"));
     }
+
     public WebElement shippingButton() {
         return waitElementToBeClickable(By.xpath("//div/input[@name='shipping_method']/following-sibling::label"));
+    }
+
+
+    public WebElement continueButton() {
+        return waitAndFindElement(By.id("button-save"));
+    }
+
+    public WebElement confirmButton() {
+        return waitElementToBeClickable(By.id("button-confirm"));
+    }
+
+    public WebElement privacyPolicy() {
+        return waitElementToBeClickable(By.xpath("//label[@for='input-account-agree']"));
+    }
+
+    public WebElement termsAndConditionsButton() {
+        return waitElementToBeClickable(By.xpath("//label[@for='input-agree']"));
+    }
+
+    public WebElement billingAddressExisting() {
+        return waitElementToBeClickable(By.xpath("//div/input[@id='input-payment-address-existing']/following-sibling::label"));
     }
 }

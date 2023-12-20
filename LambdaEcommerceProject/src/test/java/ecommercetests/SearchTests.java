@@ -12,7 +12,6 @@ public class SearchTests extends BaseTests {
         homePage.navigate();
         homePage.searchItems(existingProduct);
         homePage.assertSearchResult(existingProduct);
-        // +  ONE MORE ASSERT!
     }
 
     @Test

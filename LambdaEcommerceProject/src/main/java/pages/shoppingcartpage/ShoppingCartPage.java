@@ -14,6 +14,4 @@ public class ShoppingCartPage extends BasePage {
     protected String Url() {
         return getMappingByKey("shoppingCartPage");
     }
-
-    //ACTIONS
 }

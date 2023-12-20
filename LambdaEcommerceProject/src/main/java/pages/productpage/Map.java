@@ -45,7 +45,6 @@ public class Map extends BaseMap {
         return waitAndFindElement(By.xpath("//div[@class='input-group-append']"));
     }
 
-
     public WebElement headerElement() {
         return waitAndFindElement(By.xpath("//h1[@class='h4']"));
     }

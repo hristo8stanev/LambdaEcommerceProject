@@ -3,13 +3,13 @@ package ecommercetests;
 import core.BaseTests;
 import org.junit.jupiter.api.Test;
 
+import static core.Utils.getMappingByKey;
+
 public class ProductTests extends BaseTests {
 
     String firstProduct = "Canon EOS 5D";
     String secondProduct = "Sony VAIO";
     String expectedResult = "Product Comparison";
-    String expectedUrl = "https://ecommerce-playground.lambdatest.io/index.php?route=checkout/cart";
-    String comparePageUrl = "https://ecommerce-playground.lambdatest.io/index.php?route=product/compare";
 
     @Test
     public void compareExistingProductsTest() {
@@ -22,7 +22,7 @@ public class ProductTests extends BaseTests {
         searchPage.clickFindProductButton(secondProduct);
         productPage.compareProduct();
         productPage.comparePage();
-        homePage.assertUrlPage(comparePageUrl);
+        homePage.assertUrlPage(getMappingByKey("comparePage"));
         productPage.assertAddProductToCompare(firstProduct);
         productPage.assertAddProductToCompare(secondProduct);
         productPage.assertComparePageHeader(expectedResult);
@@ -45,7 +45,7 @@ public class ProductTests extends BaseTests {
         productPage.increaseQuantityFromQuickView();
         productPage.addToCartButtonQuickView();
         searchPage.enterShoppingCart();
-        homePage.assertUrlPage(expectedUrl);
+        homePage.assertUrlPage(getMappingByKey("shoppingCartPage"));
         searchPage.assertProductSuccessfullyAddedToCart();
     }
 }

@@ -1,9 +1,7 @@
 package pages.registerpage;
 
 import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import pages.BaseMap;
 import pages.BasePage;
 
@@ -35,9 +33,7 @@ public class RegisterPage extends BasePage {
     }
 
     public void assertRegisterTitle(String value) {
-        WebElement titleElement = baseMap.waitAndFindElement(By.xpath(String.format(
-                "//div[@id='content']//h1[contains(text(), '%s')]", value)));
-        String actualText = titleElement.getText();
+        String actualText = registerPageMap.registerTitle(value).getText();
         Assertions.assertEquals(value, actualText,
                 "Expected title does not match the actual title.");
     }

@@ -40,4 +40,8 @@ public class Map extends BaseMap {
     public WebElement continueButton() {
         return waitAndFindElement(By.xpath("//input[@type='submit']"));
     }
+    public WebElement registerTitle(String value){
+        return waitAndFindElement(By.xpath(String.format(
+                "//div[@id='content']//h1[contains(text(), '%s')]", value)));
+    }
 }

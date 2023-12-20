@@ -38,7 +38,6 @@ public class CheckoutPage extends BasePage {
         checkoutPageMap.cityField().sendKeys(billingDetails.getCity());
         checkoutPageMap.postCodeField().sendKeys(billingDetails.getPostCode());
     }
-
     public void agreeToTermsAndConditions() {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].scrollIntoView(true);", checkoutPageMap.termsAndConditionsButton());
@@ -50,6 +49,7 @@ public class CheckoutPage extends BasePage {
         var billingDetails = Factory.billingInformation();
         addPersonalDetails(personalDetails);
         addBillingDetails(billingDetails);
+        agreeToShippingMethod();
         agreeToTermsAndConditions();
         if (checkoutPageMap.privacyPolicy().isDisplayed()) {
             checkoutPageMap.privacyPolicy().click();

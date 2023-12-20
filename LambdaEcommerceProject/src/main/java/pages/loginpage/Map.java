@@ -22,8 +22,16 @@ public class Map extends BaseMap {
     public WebElement loginButton() {
         return waitAndFindElement(By.xpath("//input[@type='submit']"));
     }
+    public WebElement myAccountButton() {
+        return waitAndFindElement((By.xpath(
+                "(//span[contains(text(), 'My account')])[2]")));
+    }
 
     public WebElement logoutButton() {
         return waitAndFindElement(By.xpath("(//a[contains(@href, 'logout')])[2]"));
+    }
+    public WebElement errorMessageInvalidCredentials(){
+        return waitAndFindElement(By.xpath("//div[contains(@class, 'alert-danger')]"));
+
     }
 }

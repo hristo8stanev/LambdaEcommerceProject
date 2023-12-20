@@ -40,6 +40,7 @@ public class ProductPage extends BasePage {
 
 
 
+
     public void increaseQuantityFromQuickView() {
         productPageMap.increaseTheQuantityButton().click();
     }

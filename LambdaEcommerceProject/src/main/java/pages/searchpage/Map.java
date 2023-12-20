@@ -33,4 +33,7 @@ public class Map extends BaseMap {
     public WebElement removeButtonShoppingCart() {
         return waitAndFindElement(By.xpath("//button[contains(@onclick, 'cart.remove')]"));
     }
+    public WebElement removedProduct(String value){
+        return waitAndFindElement(By.xpath(String.format("//div[@id='content']//p[contains(text(), '%s')]", value)));
+    }
 }

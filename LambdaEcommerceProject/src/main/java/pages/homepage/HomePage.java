@@ -1,9 +1,7 @@
 package pages.homepage;
 
 import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import pages.BaseMap;
 import pages.BasePage;
 
@@ -29,21 +27,19 @@ public class HomePage extends BasePage {
         homePageMap.searchField().sendKeys(product);
         homePageMap.searchButton().click();
     }
-    public void homeButton(){
-        WebElement searchProduct = baseMap.waitAndFindElement(By.xpath("//a[contains(@href, 'common/home')]"));
-        searchProduct.click();
+
+    public void homeButton() {
+        homePageMap.homeButton().click();
 
     }
 
     public void assertSearchResult(String product) {
-        WebElement searchProduct = baseMap.waitAndFindElement(By.xpath("//div[contains(@class, 'entry-content')]/h1"));
-        Assertions.assertEquals("Search - " + product, searchProduct.getText(),
+        Assertions.assertEquals("Search - " + product, homePageMap.searchProductName().getText(),
                 "Search result does not match the expected product: " + product);
     }
 
     public void assertErrorMessageIsShown() {
-        WebElement errorMessage = baseMap.waitAndFindElement(By.xpath("//div[contains(@class, 'entry-content') and contains(@class, 'content-products')]"));
-        Assertions.assertTrue(errorMessage.isDisplayed(),
+        Assertions.assertTrue(homePageMap.errorMessageNonExistingProduct().isDisplayed(),
                 "Error message is not displayed. Search result matches the expected product.");
     }
 }

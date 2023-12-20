@@ -1,7 +1,7 @@
 package core;
 
 import enums.BrowserTypes;
-import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.WebDriver;
 import pages.checkoutpage.CheckoutPage;
@@ -15,7 +15,6 @@ import pages.shoppingcartpage.ShoppingCartPage;
 import static core.Utils.getMappingByKey;
 
 public class BaseTests {
-
     private static WebDriver driver;
     public static SearchPage searchPage;
     public static ShoppingCartPage shoppingCartPage;
@@ -40,8 +39,8 @@ public class BaseTests {
         productPage = new ProductPage(driver);
     }
 
-    @AfterEach
-    public void dispose() {
+    @AfterAll
+    public static void dispose() {
         driver.quit();
     }
 }

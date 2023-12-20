@@ -23,7 +23,7 @@ public abstract class BasePage {
     protected abstract String Url();
 
     public void navigate() {
-        this.driver.get(url);
+    driver.get(url);
     }
     public void mouseHoverByUsingWebElement(WebElement element) {
         Actions action = new Actions(driver);
