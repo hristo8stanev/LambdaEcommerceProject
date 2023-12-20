@@ -74,4 +74,8 @@ public class Map extends BaseMap {
     public WebElement billingAddressExisting() {
         return waitElementToBeClickable(By.xpath("//div/input[@id='input-payment-address-existing']/following-sibling::label"));
     }
+    public WebElement confirmOrderHeader(){
+        return waitAndFindElement(By.xpath("//div/h1[contains(@class, 'page-title')]"));
+
+    }
 }

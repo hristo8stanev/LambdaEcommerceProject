@@ -30,18 +30,21 @@ public class Map extends BaseMap {
                 "//div[contains(@class, 'product-grid') and .//a[contains(@class, 'text-ellipsis-2') " +
                         "and contains(text(), '%s')]]", name)));
     }
-    public WebElement buyNowButton(){
+
+    public WebElement buyNowButtonElement() {
         return waitAndFindElement(By.xpath("//button[contains(@title, 'Buy now')]"));
     }
-    public WebElement addToCartQuickViewButton(){
+
+    public WebElement addToCartQuickViewButton() {
         return waitAndFindElement(By.xpath("//button[contains(@class, 'button-cart')]"));
     }
-    public WebElement cartButton(){
+
+    public WebElement cartButton() {
         return waitAndFindElement(By.xpath("(//div[@class='cart-icon'])[1]"));
     }
 
 
-    public WebElement increaseTheQuantityButton(){
+    public WebElement increaseTheQuantityButton() {
         return waitAndFindElement(By.xpath("//div[@class='input-group-append']"));
     }
 

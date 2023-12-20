@@ -44,4 +44,19 @@ public class CheckoutTests extends BaseTests {
         loginPage.myAccountMethod();
         loginPage.logoutUser();
     }
+
+    @Test
+    public void guestUserCompletePurchaseFromBuyNowButtonTest() {
+        loginPage.navigate();
+        homePage.searchItems(existingProduct);
+        searchPage.clickFindProductButton(existingProduct);
+        productPage.buyBowButton();
+        checkoutPage.assertContinueButtonIsDisplayed();
+        checkoutPage.checkout();
+        checkoutPage.assertUrlPage(getMappingByKey("checkoutPage"));
+        checkoutPage.assertConfirmOrderButtonIsVisible();
+        checkoutPage.confirmOrder();
+        checkoutPage.assertUrlPage(getMappingByKey("confirmOrderPage"));
+        searchPage.assertProductRemoveFromTheCart(expectedMessage);
+    }
 }

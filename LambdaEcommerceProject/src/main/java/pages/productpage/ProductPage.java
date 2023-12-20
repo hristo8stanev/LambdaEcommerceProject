@@ -53,7 +53,10 @@ public class ProductPage extends BasePage {
     }
 
     public void assertBuyNowButtonIsDisplayedInQuickView() {
-        productPageMap.buyNowButton().isDisplayed();
+        productPageMap.buyNowButtonElement().isDisplayed();
+    }
+    public void buyBowButton(){
+        productPageMap.buyNowButtonElement().click();
     }
 
 

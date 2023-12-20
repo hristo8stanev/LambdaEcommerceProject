@@ -1,6 +1,7 @@
 package pages.checkoutpage;
 
 import core.Factory;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import pages.BaseMap;
@@ -38,6 +39,7 @@ public class CheckoutPage extends BasePage {
         checkoutPageMap.cityField().sendKeys(billingDetails.getCity());
         checkoutPageMap.postCodeField().sendKeys(billingDetails.getPostCode());
     }
+
     public void agreeToTermsAndConditions() {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].scrollIntoView(true);", checkoutPageMap.termsAndConditionsButton());
@@ -56,6 +58,7 @@ public class CheckoutPage extends BasePage {
         }
         checkoutPageMap.continueButton().click();
     }
+
     public void checkOutAuthenticatedUser() {
         checkoutPageMap.billingAddressExisting().click();
         checkoutPageMap.paymentButton().click();
@@ -63,6 +66,7 @@ public class CheckoutPage extends BasePage {
         agreeToTermsAndConditions();
         checkoutPageMap.continueButton().click();
     }
+
     public void confirmOrder() {
         checkoutPageMap.confirmButton().click();
     }
@@ -75,5 +79,13 @@ public class CheckoutPage extends BasePage {
 
     public void assertConfirmOrderButtonIsVisible() {
         checkoutPageMap.confirmButton();
+    }
+    public void assertContinueButtonIsDisplayed(){
+        checkoutPageMap.continueButton().isDisplayed();
+    }
+
+    public void assertConfirmOrder(String confirmOrder) {
+        String value = checkoutPageMap.confirmOrderHeader().getAttribute("innerText");
+        Assertions.assertEquals(confirmOrder, value, "Header title not as expected. Expected: " + confirmOrder + ", received: " + value);
     }
 }
