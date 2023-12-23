@@ -113,7 +113,9 @@ The tests will be conducted both independently and in groups to ensure thorough 
 - **Test Case 4:** Verify that a user cannot register with a weak password.
     - (Priority: High - 2)
 - **Test Case 5:** Verify that a error messages for fields.
-    - (Priority: High - 2)
+    - (Priority: High - 2)    
+- **Test Case 6:** Verify that user registration fails when the user does not click on the agree privacy policy button.
+    - (Priority: Highest - 1)
 
 ### Login Tests:
 
@@ -125,6 +127,10 @@ The tests will be conducted both independently and in groups to ensure thorough 
     - (Priority: High - 2)
 - **Test Case 9:** Login with empty fields.
    - (Priority: High - 2)
+- **Test Case 7:** Verify that a user cannot log in with an invalid username and a valid password.
+    - (Priority: Highest - 1)
+- **Test Case 8:** Verify that a user cannot log in with an invalid username and an invalid password.
+    - (Priority: Highest - 1)
 
 
 ### Forgotten Password:
@@ -176,10 +182,14 @@ The tests will be conducted both independently and in groups to ensure thorough 
 
 - **Test Case 28:** Add items to the shopping cart from product pages.
     - (Priority: Highest - 1)
+- **Test Case -:** Verify that the quantity refresh button updates the quantities correctly.
+    - (Priority: Highest)
 - **Test Case 29:** Verify that a user can change the quantity of a product in the shopping cart.
     - (Priority: High - 2)
 - **Test Case 30:** Verify that the shopping cart displays the correct quantity and total price.
    - (Priority: Highest - 1)
+- **Test Case -:** Verify that the shopping cart displays the correct maximum number of items allowed.
+   - (Priority: Medium)
 - **Test Case 31:** Verify that a user can remove a product from the shopping cart.
     - (Priority: High - 2)
 - **Test Case 32:** Ensure that the shopping cart is emptied after the checkout process.
@@ -214,18 +224,33 @@ The tests will be conducted both independently and in groups to ensure thorough 
     - (Priority: Highest - 1)
 - **Test Case 42:** Validate the accuracy of the order summary before payment.
     - (Priority: High - 2)
+- **Test Case -:** Register a new account through the checkout page and complete the checkout process.
+    - (Priority: High)
 - **Test Case 43:** Complete guest checkout by registering an account during the checkout process.
      - (Priority: Medium - 3)
 - **Test Case 44:** Successfully log in during the checkout process and complete the purchase.
      - (Priority: Medium - 3)
-  - **Test Case 45:** Validate the accuracy of the "Your Personal Details" form during account creation.
+- **Test Case -:** Validate that the images, product names, quantities, unit prices, and totals are displayed correctly on the checkout page.        - (Priority: Highest)
+- **Test Case -:** Confirm that VAT tax is calculated correctly for EU countries during checkout.
+     - (Priority: Highest)
+- **Test Case -:**  Attempt to add an invalid comment with an empty field during checkout.
+     - (Priority: Low)
+ - **Test Case -:** Try to check out without agreeing to the terms and privacy policy.
+    - (Priority: Highest)
+- **Test Case 45:** Validate the accuracy of the "Your Personal Details" form during account creation.
      - (Priority: Highest - 1)
 - **Test Case 46:** Successfully add comments about the order during the checkout process.
-     - (Priority: Low - 4)
+     - (Priority: Medium - 3)
+- **Test Case -:** Attempt to add an invalid comment with more than the maximum allowed characters during checkout.
+     - (Priority: Low)
+- **Test Case -:** Attempt to add an invalid comment with an empty field during checkout.
+      - (Priority: Low)
 - **Test Case 47:** Validate that clicking the "Edit" button navigates to the previous page or step.
-  - (Priority: Highest - 1)
+     - (Priority: Highest - 1)
+- **Test Case -:** Ensure that the "Continue Shopping" button functions as expected.
+     - (Priority: Medium)
 - **Test Case 48:** Verify the display of a success message after confirming the order.
-  - (Priority: High - 2)
+     - (Priority: High - 2)
 
 ### Quick View Tests:
 
