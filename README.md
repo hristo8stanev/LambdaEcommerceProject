@@ -337,8 +337,8 @@ The tests will be conducted both independently and in groups to ensure thorough 
 - **Pending automation: 84** 
 
 - **Estimated Timeline:**
-  - Estimated remaining time for completion of all tasks: 15 days
-
+   - Estimated remaining time for completion of all tasks: 15 days
+ 
 ## Surefire Report
 - **Double-Click to Run Tests:** 
   - Execute the tests by double-clicking on the surefireReport.bat file.
