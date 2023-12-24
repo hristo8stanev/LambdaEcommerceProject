@@ -119,158 +119,206 @@ The tests will be conducted both independently and in groups to ensure thorough 
 
 ### Login Tests:
 
-- **Test Case 6:** Verify that a registered user can successfully log in with valid credentials.
+- **Test Case 7:** Verify that a registered user can successfully log in with valid credentials.
     - (Priority: Highest - 1)
-- **Test Case 7:** Verify that a user cannot log in with invalid credentials.
+- **Test Case 8:** Verify that a user cannot log in with invalid credentials.
     - (Priority: High - 2)
-- **Test Case 8:** Validate the display of appropriate error messages for invalid login attempts.
+- **Test Case 9:** Validate the display of appropriate error messages for invalid login attempts.
     - (Priority: High - 2)
-- **Test Case 9:** Login with empty fields.
+- **Test Case 10:** Login with empty fields.
    - (Priority: High - 2)
-- **Test Case 7:** Verify that a user cannot log in with an invalid username and a valid password.
+- **Test Case 11:** Verify that a user cannot log in with an invalid username and a valid password.
     - (Priority: Highest - 1)
-- **Test Case 8:** Verify that a user cannot log in with an invalid username and an invalid password.
+- **Test Case 12:** Verify that a user cannot log in with an invalid username and an invalid password.
     - (Priority: Highest - 1)
 
+### Account Management:
+- **Test Case 13:** Modify personal information (first name, last name, email, telephone).
+    - (Priority: High - 2)
+- **Test Case 14:** Edit an address in the address book with new valid information.
+    - (Priority: Medium - 3)
+- **Test Case 15:**  Delete an address from the address book and verify success message.
+    - (Priority: Medium - 3)
+- **Test Case 16:**  Purchase a gift certificate with valid information
+    - (Priority: High - 2)
 
 ### Forgotten Password:
 
-- **Test Case 10:** Check for the availability of a "Forgot Password" functionality.
+- **Test Case 17:** Check for the availability of a "Forgot Password" functionality.
      - (Priority: High - 2)
-- **Test Case 11:** Verify that the reset password link sent to the user's email is functional.
+- **Test Case 18:** Verify that the reset password link sent to the user's email is functional.
    - (Priority: High - 2)
-- **Test Case 12:** Try to login with changed password.
+- **Test Case 19:** Try to login with changed password.
      - (Priority: High - 2)
+- **Test Case 20:** Click on Forgotten Password, fill in a valid email address, and click Continue. (Priority: Medium)
+- **Test Case 21:** Click on Forgotten Password, leave the email address field empty, and click Continue. (Priority: Medium)
+- **Test Case 22:**  Click on Forgotten Password, fill in an invalid email address, and click Continue. (Priority: Medium)
 
 ### Search Tests:
 
-- **Test Case 13:** Verify that the search functionality returns relevant results for a search query.
+- **Test Case 23:** Verify that the search functionality returns relevant results for a search query.
     - (Priority: High - 2)
-- **Test Case 14:** Validate that relevant results are displayed when a valid search term is entered.
+- **Test Case 24:** Validate that relevant results are displayed when a valid search term is entered.
     - (Priority: High - 2)
-- **Test Case 15:** Test Case 3: Check that no results are shown for an invalid search term.
+- **Test Case 25:** Check that no results are shown for an invalid search term.
     - (Priority: Medium - 3)
-- **Test Case 16:** Verify that advanced search options (categories) work as expected.
+- **Test Case 26:** Verify that advanced search options (categories) work as expected.
+    - (Priority: High - 2)
+- **Test Case 27:** Click Search button with an empty search bar.
+    - (Priority: High - 2)
+- **Test Case 28:** Click Search button with a single-term item.
+    - (Priority: High - 2)
+- **Test Case 29:** Click Search button with multiple-term item. 
+    - (Priority: High - 2)
+- **Test Case 30:** Click Search button with a search term containing special characters.
+    - (Priority: Low - 4)
+- **Test Case 31:** Select Manufacturer from presented suggestions.
+    - (Priority: High - 2)
+- **Test Case 32:** Select Availability from presented suggestions.
+    - (Priority: High - 2)
+- **Test Case 33:** Select Discount from presented suggestions.
+    - (Priority: High - 2)
+- **Test Case 34:** Select Rating from presented suggestions.
     - (Priority: High - 2)
 
 ### Product Tests:
 
-- **Test Case 17:** Verify that products can be sorted by size.
+- **Test Case 35:** Verify that products can be sorted by size.
     - (Priority: Medium - 3)
-- **Test Case 18:** Verify that products can be sorted by color.
+- **Test Case 36:** Verify that products can be sorted by color.
     - (Priority: Medium - 3)
-- **Test Case 19:** Add multiple products to the comparison list.
+- **Test Case 37:** Add multiple products to the comparison list.
     - (Priority: High - 2)
-- **Test Case 20:** Verify the functionality to sort products by name in ascending order (A-Z).
+- **Test Case 38:** Verify the functionality to sort products by name in ascending order (A-Z).
     - (Priority: High - 2)
-- **Test Case 21:** Verify the functionality to sort products by price in ascending order (Low to High).
+- **Test Case 39:** Select Sort by: Name (Z-A).
+   - (Priority: Medium - 3)
+- **Test Case 40:** Verify the functionality to sort products by price in ascending order (Low to High).
+   - (Priority: High - 2)
+- **Test Case 41:** Select Sort by: Price (High>Low).
+   - (Priority: Medium - 3)
+- **Test Case 42:** Select Sort by: Rating (Highest).
+   - (Priority: High - 2)
+- **Test Case 43:** Select Sort by: Rating (Lowest).
+   - (Priority: High - 2)
+- **Test Case 44:** Select Sort by: Best Seller.
+   - (Priority: High - 2)
+- **Test Case 45:** Select Sort by: Popular.
+   - (Priority: Medium - 3)
+- **Test Case 46:** Select Sort by: Newest.
+   - (Priority: Medium - 3)
+- **Test Case 47:** Verify that the comparison screen displays the selected products.
     - (Priority: High - 2)
-- **Test Case 22:** Verify that the comparison screen displays the selected products.
+- **Test Case 48:** Remove products from the comparison list.
     - (Priority: High - 2)
-- **Test Case 23:** Remove products from the comparison list.
-    - (Priority: High - 2)
-- **Test Case 24:** Verify functionality of the "Buy Now" button.
+- **Test Case 49:** Verify functionality of the "Buy Now" button.
     - (Priority: Highest - 2)
-- **Test Case 25:** Verify functionality of the "Size Chart" button.
+- **Test Case 50:** Verify functionality of the "Size Chart" button.
     - (Priority: High - 2)
-- **Test Case 26:** Verify functionality of the "Ask a Question" button.
+- **Test Case 51:** Verify functionality of the "Ask a Question" button.
     - (Priority: Medium - 3)
-- **Test Case 27:** Verify functionality of the "Write a Review" button.
+- **Test Case 52:** Verify functionality of the "Write a Review" button.
    - (Priority: Medium - 3)
 
 ### Shopping Cart Tests:
 
-- **Test Case 28:** Add items to the shopping cart from product pages.
+- **Test Case 53:** Add items to the shopping cart from product pages.
     - (Priority: Highest - 1)
-- **Test Case -:** Verify that the quantity refresh button updates the quantities correctly.
+- **Test Case 54:** Verify that the quantity refresh button updates the quantities correctly.
     - (Priority: Highest)
-- **Test Case 29:** Verify that a user can change the quantity of a product in the shopping cart.
+- **Test Case 55:** Verify that a user can change the quantity of a product in the shopping cart.
     - (Priority: High - 2)
-- **Test Case 30:** Verify that the shopping cart displays the correct quantity and total price.
+- **Test Case 56:** Verify that the shopping cart displays the correct quantity and total price.
    - (Priority: Highest - 1)
-- **Test Case -:** Verify that the shopping cart displays the correct maximum number of items allowed.
+- **Test Case 57:** Verify that the shopping cart displays the correct maximum number of items allowed.
    - (Priority: Medium)
-- **Test Case 31:** Verify that a user can remove a product from the shopping cart.
+- **Test Case 58:** Verify that a user can remove a product from the shopping cart.
     - (Priority: High - 2)
-- **Test Case 32:** Ensure that the shopping cart is emptied after the checkout process.
+- **Test Case 59:** Ensure that the shopping cart is emptied after the checkout process.
    - (Priority: Highest - 1)
-- **Test Case 33:** Verify that a flat shipping rate is recalculated based on the size of the items in the shopping cart.
+- **Test Case 60:** Verify that a flat shipping rate is recalculated based on the size of the items in the shopping cart.
    - (Priority: Highest - 1)
-- **Test Case 34:** Verify the maximum number of items allowed in the shopping cart.
+- **Test Case 61:** Verify the maximum number of items allowed in the shopping cart.
    - (Priority: Highest - 1)
-
+- **Test Case 62:** Apply a valid gift certificate code and verify the changes in the total price.
+   - (Priority: Medium)
+- **Test Case 63:** Apply an invalid gift certificate code and verify the error message.
+   - (Priority: Medium)
 
 ### Wishlist Tests:
-
-- **Test Case 35:** Verify that a user can add a product to their wishlist.
+- **Test Case 64:** Add item to wishlist from the product page using the "Add to Wishlist" button. 
    - (Priority: Medium - 3)
-- **Test Case 36:** Verify that a user can remove a product from their wishlist.
+- **Test Case 65:** Add item to wishlist from the search product page. 
+   - (Priority: Medium - 3)
+- **Test Case 66:** Remove item from wishlist using the "Add to Cart" icon on the Action field.
+   - (Priority: Medium - 3)
+- **Test Case 67:** Remove item from wishlist using the "Remove" icon on the Action field. 
     - (Priority: Medium - 3)
 
 ### Compare Product Tests:
 
-- **Test Case 37:** Verify that a user can add products to the comparison list.
+- **Test Case 68:** Verify that a user can add products to the comparison list.
     - (Priority: Medium - 3)
-- **Test Case 38:** Verify that a user can remove products from the comparison list.
+- **Test Case 69:** Verify that a user can remove products from the comparison list.
     - (Priority: Medium - 3)
 
 ### Checkout Tests:
 
-- **Test Case 39:** Verify that a guest user can successfully complete the checkout process.
+- **Test Case 70:** Verify that a guest user can successfully complete the checkout process.
     - (Priority: High - 2)
-- **Test Case 40:** Verify that a logged-in user can successfully complete the checkout process.
+- **Test Case 71:** Verify that a logged-in user can successfully complete the checkout process.
     - (Priority: Highest - 1)
-- **Test Case 41:** Confirm that users can enter and save shipping information.
+- **Test Case 72:** Confirm that users can enter and save shipping information.
     - (Priority: Highest - 1)
-- **Test Case 42:** Validate the accuracy of the order summary before payment.
+- **Test Case 73:** Validate the accuracy of the order summary before payment.
     - (Priority: High - 2)
-- **Test Case -:** Register a new account through the checkout page and complete the checkout process.
+- **Test Case 74:** Register a new account through the checkout page and complete the checkout process.
     - (Priority: High)
-- **Test Case 43:** Complete guest checkout by registering an account during the checkout process.
+- **Test Case 75:** Complete guest checkout by registering an account during the checkout process.
+    - (Priority: Medium - 3)
+- **Test Case 76:** Successfully log in during the checkout process and complete the purchase.
      - (Priority: Medium - 3)
-- **Test Case 44:** Successfully log in during the checkout process and complete the purchase.
-     - (Priority: Medium - 3)
-- **Test Case -:** Validate that the images, product names, quantities, unit prices, and totals are displayed correctly on the checkout page.        - (Priority: Highest)
-- **Test Case -:** Confirm that VAT tax is calculated correctly for EU countries during checkout.
-     - (Priority: Highest)
-- **Test Case -:**  Attempt to add an invalid comment with an empty field during checkout.
-     - (Priority: Low)
- - **Test Case -:** Try to check out without agreeing to the terms and privacy policy.
+- **Test Case 77:** Validate that the images, product names, quantities, unit prices, and totals are displayed correctly on the checkout page.        - (Priority: Highest)
+- **Test Case 78:** Confirm that VAT tax is calculated correctly for EU countries during checkout.
     - (Priority: Highest)
-- **Test Case 45:** Validate the accuracy of the "Your Personal Details" form during account creation.
-     - (Priority: Highest - 1)
-- **Test Case 46:** Successfully add comments about the order during the checkout process.
-     - (Priority: Medium - 3)
-- **Test Case -:** Attempt to add an invalid comment with more than the maximum allowed characters during checkout.
+- **Test Case 79:**  Attempt to add an invalid comment with an empty field during checkout.
      - (Priority: Low)
-- **Test Case -:** Attempt to add an invalid comment with an empty field during checkout.
-      - (Priority: Low)
-- **Test Case 47:** Validate that clicking the "Edit" button navigates to the previous page or step.
+ - **Test Case 80:** Try to check out without agreeing to the terms and privacy policy.
+    - (Priority: Highest)
+- **Test Case 81:** Validate the accuracy of the "Your Personal Details" form during account creation.
      - (Priority: Highest - 1)
-- **Test Case -:** Ensure that the "Continue Shopping" button functions as expected.
+- **Test Case 82:** Successfully add comments about the order during the checkout process.
+     - (Priority: Medium - 3)
+- **Test Case 83:** Attempt to add an invalid comment with more than the maximum allowed characters during checkout.
+     - (Priority: Low)
+- **Test Case 84:** Attempt to add an invalid comment with an empty field during checkout.
+      - (Priority: Low)
+- **Test Case 85:** Validate that clicking the "Edit" button navigates to the previous page or step.
+     - (Priority: Highest - 1)
+- **Test Case 86:** Ensure that the "Continue Shopping" button functions as expected.
      - (Priority: Medium)
-- **Test Case 48:** Verify the display of a success message after confirming the order.
+- **Test Case 87:** Verify the display of a success message after confirming the order.
      - (Priority: High - 2)
 
 ### Quick View Tests:
 
-- **Test Case 49:** Verify that the Quick View can be closed without issues.
+- **Test Case 88:** Verify that the Quick View can be closed without issues.
     - (Priority: High - 2)
-- **Test Case 50:** Check that the Quick View displays essential product information.
+- **Test Case 89:** Check that the Quick View displays essential product information.
      - (Priority: High - 2)
-- **Test Case 51:** Navigate to the Quick View from the product page.
+- **Test Case 90:** Navigate to the Quick View from the product page.
    - (Priority: High - 2)
-- **Test Case 52:** Verify that a user can change the quantity of a product from the Quick View.
+- **Test Case 91:** Verify that a user can change the quantity of a product from the Quick View.
    -  (Priority: High - 2)
-- **Test Case 53:** Verify that a user can change the size of a product from the Quick View.
+- **Test Case 92:** Verify that a user can change the size of a product from the Quick View.
    -  (Priority: High - 2)
-- **Test Case 54:** Verify that a user can change the color of a product from the Quick View.
+- **Test Case 93:** Verify that a user can change the color of a product from the Quick View.
    -  (Priority: High - 2)
-- **Test Case 55:** Verify that a user can add a product to the cart from the Quick View.
+- **Test Case 94:** Verify that a user can add a product to the cart from the Quick View.
    - (Priority: High - 2)
-- **Test Case 56:** Ensure that the correct item with customized attributes is added to the cart.
+- **Test Case 95:** Ensure that the correct item with customized attributes is added to the cart.
    - (Priority: High - 2)
-- **Test Case 57:** Validate that the cart reflects the correct quantity and total price.
+- **Test Case 96:** Validate that the cart reflects the correct quantity and total price.
    - (Priority: High - 2)
 
 ## Surefire Report
