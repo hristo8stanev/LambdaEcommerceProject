@@ -103,7 +103,7 @@ The tests will be conducted both independently and in groups to ensure thorough 
 ## Abstract Test Cases
 
 - **Remark**
- -  All automated tests are tagged with `@Tag("TestCase-<test_number>")`.
+    - All automated tests are tagged with `@Tag("TestCase-<test_number>")`.
 
 
 ### User Register:
