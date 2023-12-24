@@ -43,7 +43,6 @@ public class Map extends BaseMap {
         return waitAndFindElement(By.xpath("(//div[@class='cart-icon'])[1]"));
     }
 
-
     public WebElement increaseTheQuantityButton() {
         return waitAndFindElement(By.xpath("//div[@class='input-group-append']"));
     }
@@ -54,9 +53,5 @@ public class Map extends BaseMap {
 
     public WebElement compareProductElement(String value) {
         return waitAndFindElement(By.xpath(String.format("//strong[contains(text(),'%s')]", value)));
-    }
-
-    public WebElement changeSizeButton() {
-        return waitAndFindElement(By.xpath("//select[contains(@name, 'option')]"));
     }
 }

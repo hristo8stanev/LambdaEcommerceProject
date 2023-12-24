@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ecommercetests.ShoppingCartTests
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.558 s - in ecommercetests.ShoppingCartTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.796 s - in ecommercetests.ShoppingCartTests

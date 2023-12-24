@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ecommercetests.SearchTests
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.694 s - in ecommercetests.SearchTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.551 s - in ecommercetests.SearchTests

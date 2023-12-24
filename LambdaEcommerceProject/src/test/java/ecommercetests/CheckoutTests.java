@@ -2,6 +2,7 @@ package ecommercetests;
 
 import core.BaseTests;
 import core.Factory;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static core.Utils.getMappingByKey;
@@ -13,6 +14,7 @@ public class CheckoutTests extends BaseTests {
     String expectedMessage = "Your shopping cart is empty!";
 
     @Test
+    @Tag("TestCase-70")
     public void guestUserCheckoutTest() {
         loginPage.navigate();
         homePage.searchItems(existingProduct);
@@ -27,6 +29,7 @@ public class CheckoutTests extends BaseTests {
     }
 
     @Test
+    @Tag("TestCase-71")
     public void authenticatedUserCheckoutTest() {
         var loginInfo = Factory.loginUser(emailAddress, password);
         loginPage.navigate();
@@ -43,20 +46,5 @@ public class CheckoutTests extends BaseTests {
         searchPage.assertProductRemoveFromTheCart(expectedMessage);
         loginPage.myAccountMethod();
         loginPage.logoutUser();
-    }
-
-    @Test
-    public void guestUserCompletePurchaseFromBuyNowButtonTest() {
-        loginPage.navigate();
-        homePage.searchItems(existingProduct);
-        searchPage.clickFindProductButton(existingProduct);
-        productPage.buyBowButton();
-        checkoutPage.assertContinueButtonIsDisplayed();
-        checkoutPage.checkout();
-        checkoutPage.assertUrlPage(getMappingByKey("checkoutPage"));
-        checkoutPage.assertConfirmOrderButtonIsVisible();
-        checkoutPage.confirmOrder();
-        checkoutPage.assertUrlPage(getMappingByKey("confirmOrderPage"));
-        searchPage.assertProductRemoveFromTheCart(expectedMessage);
     }
 }

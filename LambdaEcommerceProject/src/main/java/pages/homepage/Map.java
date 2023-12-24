@@ -10,7 +10,7 @@ public class Map extends BaseMap {
         super(driver);
     }
 
-    public WebElement homeButton() {
+    public WebElement homeButtonElement() {
         return waitAndFindElement(By.xpath("//a[contains(@href, 'common/home')]"));
     }
 

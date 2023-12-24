@@ -54,7 +54,6 @@ public class Map extends BaseMap {
         return waitElementToBeClickable(By.xpath("//div/input[@name='shipping_method']/following-sibling::label"));
     }
 
-
     public WebElement continueButton() {
         return waitAndFindElement(By.id("button-save"));
     }
@@ -74,7 +73,8 @@ public class Map extends BaseMap {
     public WebElement billingAddressExisting() {
         return waitElementToBeClickable(By.xpath("//div/input[@id='input-payment-address-existing']/following-sibling::label"));
     }
-    public WebElement confirmOrderHeader(){
+
+    public WebElement confirmOrderHeader() {
         return waitAndFindElement(By.xpath("//div/h1[contains(@class, 'page-title')]"));
 
     }

@@ -29,7 +29,7 @@ public class HomePage extends BasePage {
     }
 
     public void homeButton() {
-        homePageMap.homeButton().click();
+        homePageMap.homeButtonElement().click();
 
     }
 

@@ -1,6 +1,7 @@
 package ecommercetests;
 
 import core.BaseTests;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static core.Utils.getMappingByKey;
@@ -12,6 +13,7 @@ public class ProductTests extends BaseTests {
     String expectedResult = "Product Comparison";
 
     @Test
+    @Tag("TestCase-68")
     public void compareExistingProductsTest() {
         homePage.navigate();
         homePage.searchItems(firstProduct);
@@ -30,6 +32,7 @@ public class ProductTests extends BaseTests {
     }
 
     @Test
+    @Tag("TestCase-90")
     public void navigateToQuickViewOfTheProductTest() {
         homePage.navigate();
         homePage.searchItems(firstProduct);
@@ -38,6 +41,7 @@ public class ProductTests extends BaseTests {
     }
 
     @Test
+    @Tag("TestCase-91")
     public void changeTheQuantityFromQuickViewTest() {
         homePage.navigate();
         homePage.searchItems(secondProduct);
