@@ -7,7 +7,7 @@
 - [Surefire Report](#surefire-report)
 
 ## Overview
-This repository houses the automated tests for the E-commerce Playground platform. The contents include documentation, such as the Test Strategy, a list of Test Cases in the Automation Backlog, and the Test Report file. The IntelliJ project contains automated tests covering various functionalities of the platform.
+This repository houses the automated tests for the E-commerce Playground platform. The contents include documentation, such as the Test Strategy, a list of Test Cases in the Abstract Test Cases, and the Surefire Report file. The IntelliJ project contains automated tests covering various functionalities of the platform.
 
 ## Testing Strategy
 
