@@ -236,7 +236,7 @@ The tests will be conducted both independently and in groups to ensure thorough 
 - **Test Case 57:** Verify that the shopping cart displays the correct maximum number of items allowed.
    - (Priority: Medium)
 - **Test Case 58:** Verify that a user can remove a product from the shopping cart.
-    - (Priority: High - 2)
+    - (Priority: Highest)
 - **Test Case 59:** Ensure that the shopping cart is emptied after the checkout process.
    - (Priority: Highest - 1)
 - **Test Case 60:** Verify that a flat shipping rate is recalculated based on the size of the items in the shopping cart.
@@ -325,8 +325,8 @@ The tests will be conducted both independently and in groups to ensure thorough 
    - (Priority: High - 2)
  
 ### Summary:  
-- **Highest Priority Test Cases: 18 test cases** 
-- **High Priority Test Cases: 39 test cases** 
+- **Highest Priority Test Cases: 19 test cases** 
+- **High Priority Test Cases: 38 test cases** 
 - **Medium Priority Test Cases: 36 test cases** 
 - **Low Priority Test Cases: 5 test cases**
 
