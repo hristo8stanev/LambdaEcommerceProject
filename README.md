@@ -150,9 +150,12 @@ The tests will be conducted both independently and in groups to ensure thorough 
    - (Priority: High - 2)
 - **Test Case 19:** Try to login with changed password.
      - (Priority: High - 2)
-- **Test Case 20:** Click on Forgotten Password, fill in a valid email address, and click Continue. (Priority: Medium)
-- **Test Case 21:** Click on Forgotten Password, leave the email address field empty, and click Continue. (Priority: Medium)
-- **Test Case 22:**  Click on Forgotten Password, fill in an invalid email address, and click Continue. (Priority: Medium)
+- **Test Case 20:** Click on Forgotten Password, fill in a valid email address, and click Continue.
+    - (Priority: Medium - 3)
+- **Test Case 21:** Click on Forgotten Password, leave the email address field empty, and click Continue.
+    - (Priority: Medium - 3)
+- **Test Case 22:**  Click on Forgotten Password, fill in an invalid email address, and click Continue.
+    - (Priority: Medium - 3)
 
 ### Search Tests:
 
@@ -292,7 +295,7 @@ The tests will be conducted both independently and in groups to ensure thorough 
 - **Test Case 83:** Attempt to add an invalid comment with more than the maximum allowed characters during checkout.
      - (Priority: Low)
 - **Test Case 84:** Attempt to add an invalid comment with an empty field during checkout.
-      - (Priority: Low)
+     - (Priority: Low)
 - **Test Case 85:** Validate that clicking the "Edit" button navigates to the previous page or step.
      - (Priority: Highest - 1)
 - **Test Case 86:** Ensure that the "Continue Shopping" button functions as expected.
