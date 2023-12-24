@@ -328,7 +328,10 @@ The tests will be conducted both independently and in groups to ensure thorough 
 - **Highest Priority Test Cases: 18 test cases** 
 - **High Priority Test Cases: 39 test cases** 
 - **Medium Priority Test Cases: 36 test cases** 
-- **Low Priority Test Cases: 5 test cases** 
+- **Low Priority Test Cases: 5 test cases**
+
+- **Total Cases:** 
+  - Total Test Cases: 98
 
 ## Surefire Report
 - **Double-Click to Run Tests:** 
