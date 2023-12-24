@@ -333,8 +333,8 @@ The tests will be conducted both independently and in groups to ensure thorough 
 - **Total Cases:** 
   - Total Test Cases: 98
  
-- **Automated cases: 14** 
-- **Pending automation: 84** 
+- **Automated cases: 13** 
+- **Pending automation: 85** 
 
 - **Estimated Timeline:**
    - Estimated remaining time for completion of all tasks: 15 days
