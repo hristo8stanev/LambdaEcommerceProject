@@ -324,7 +324,7 @@ The tests will be conducted both independently and in groups to ensure thorough 
 - **Test Case 96:** Validate that the cart reflects the correct quantity and total price.
    - (Priority: High - 2)
  
-   ### Summary:  
+### Summary:  
 - **Highest Priority Test Cases: 18 test cases** 
 - **High Priority Test Cases: 39 test cases** 
 - **Medium Priority Test Cases: 36 test cases** 
