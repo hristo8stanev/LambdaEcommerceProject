@@ -332,6 +332,12 @@ The tests will be conducted both independently and in groups to ensure thorough 
 
 - **Total Cases:** 
   - Total Test Cases: 98
+ 
+- **Automated cases: 14:** 
+- **Pending automation: 84:** 
+
+- **Estimated Timeline:**
+ - Estimated remaining time for completion of all tasks: 15 days
 
 ## Surefire Report
 - **Double-Click to Run Tests:** 
