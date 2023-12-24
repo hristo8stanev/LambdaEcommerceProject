@@ -102,6 +102,10 @@ The tests will be conducted both independently and in groups to ensure thorough 
 
 ## Abstract Test Cases
 
+- **Remark**
+ -  All automated tests are tagged with `@Tag("TestCase-<test_number>")`.
+
+
 ### User Register:
 
 - **Test Case 1:** Verify that users can register for a new account successfully.
